@@ -21,7 +21,10 @@ namespace :topcoat do
   ASSETS_CSS = TOPCOAT_CSS.pathmap("app/assets/stylesheets/topcoat/%f")
   ASSETS_CSS.zip(TOPCOAT_CSS).each do |target, source|
     target.gsub!(/topcoat-mobile-/, '')
-    file target => [source] { cp source, target, verbose: true }
+    # file target => [source] { cp source, target, verbose: true }
+    File.open(target,'w+') do |output_file|
+      output_file.puts File.read(source).gsub(/url\("..\/font\/(.*)"\)/, 'font-url(\1)').gsub(/url\("..\/img\/(.*)"\)/, 'image-url(\1)')
+    end
   end
 
   TOPCOAT_IMAGES = FileList["topcoat/release/img/*.*"]

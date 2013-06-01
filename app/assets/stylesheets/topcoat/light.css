@@ -1,29 +1,29 @@
 @font-face {
   font-family: "Source Sans";
-  src: url("../font/SourceSansPro-Regular.otf");
+  src: font-url(SourceSansPro-Regular.otf);
 }
 @font-face {
   font-family: "Source Sans";
-  src: url("../font/SourceSansPro-Light.otf");
+  src: font-url(SourceSansPro-Light.otf);
   font-weight: 200;
 }
 @font-face {
   font-family: "Source Sans";
-  src: url("../font/SourceSansPro-Semibold.otf");
+  src: font-url(SourceSansPro-Semibold.otf);
   font-weight: 600;
 }
 @font-face {
   font-family: "source";
-  src: url("../font/SourceSansPro-Regular.otf");
+  src: font-url(SourceSansPro-Regular.otf);
 }
 @font-face {
   font-family: "source-l";
-  src: url("../font/SourceSansPro-Light.otf");
+  src: font-url(SourceSansPro-Light.otf);
   font-weight: 200;
 }
 @font-face {
   font-family: "source-sb";
-  src: url("../font/SourceSansPro-Semibold.otf");
+  src: font-url(SourceSansPro-Semibold.otf);
   font-weight: 600;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .topcoat-icon--menu-stack {
-  background: url("../img/hamburger_dark.svg") no-repeat;
+  background: image-url(hamburger_dark.svg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -815,7 +815,7 @@ limitations under the License.
   padding: 0 0 0 2.7em;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  background-image: url("../img/search.svg");
+  background-image: image-url(search.svg);
   background-position: 1em center;
   background-repeat: no-repeat;
   -webkit-background-size: 16px;

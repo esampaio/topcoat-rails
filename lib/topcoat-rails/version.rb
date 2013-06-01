@@ -1,5 +1,5 @@
 module Topcoat
   module Rails
-    VERSION = "0.0.10"
+    VERSION = "0.0.2"
   end
 end
