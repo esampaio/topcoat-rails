@@ -1,4 +1,5 @@
 # Topcoat::Rails
+[![Dependency Status](https://gemnasium.com/esampaio/topcoat-rails.png)](https://gemnasium.com/esampaio/topcoat-rails)
 
 A gem to add Adobe's Topcoat to your Rails application
 
