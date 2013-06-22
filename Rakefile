@@ -24,7 +24,7 @@ namespace :topcoat do
     target.gsub!(/css/, 'scss')
     # file target => [source] { cp source, target, verbose: true }
     File.open(target,'w+') do |output_file|
-      output_file.puts File.read(source).gsub(/url\("..\/font\/(.*)"\)/, 'font-url(\1)').gsub(/url\("..\/img\/(.*)"\)/, 'image-url(\1)')
+      output_file.puts File.read(source).gsub(/url\("..\/font\/(.*)"\)/, 'font-url("\1")').gsub(/url\("..\/img\/(.*)"\)/, 'image-url("\1")')
     end
   end
 
