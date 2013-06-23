@@ -20,7 +20,7 @@ namespace :topcoat do
   TOPCOAT_CSS = FileList["topcoat/release/css/*.*"].exclude(/min/)
   ASSETS_CSS = TOPCOAT_CSS.pathmap("app/assets/stylesheets/topcoat/%f")
   ASSETS_CSS.zip(TOPCOAT_CSS).each do |target, source|
-    target.gsub!(/topcoat-mobile-/, '')
+    target.gsub!(/topcoat-/, '')
     target.gsub!(/css/, 'scss')
     # file target => [source] { cp source, target, verbose: true }
     File.open(target,'w+') do |output_file|

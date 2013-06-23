@@ -12,25 +12,11 @@
   src: font-url("topcoat/SourceSansPro-Semibold.otf");
   font-weight: 600;
 }
-@font-face {
-  font-family: "source";
-  src: font-url("topcoat/SourceSansPro-Regular.otf");
-}
-@font-face {
-  font-family: "source-l";
-  src: font-url("topcoat/SourceSansPro-Light.otf");
-  font-weight: 200;
-}
-@font-face {
-  font-family: "source-sb";
-  src: font-url("topcoat/SourceSansPro-Semibold.otf");
-  font-weight: 600;
-}
 
 body {
   margin: 0;
   padding: 0;
-  background: #dfe2e2;
+  background: #3a3f42 image-url("topcoat/bg_dark.png") repeat-x;
   color: #000;
   font: 16px "Source Sans", helvetica, arial, sans-serif;
   font-weight: 200;
@@ -38,7 +24,7 @@ body {
 }
 
 .topcoat-icon--menu-stack {
-  background: image-url("topcoat/hamburger_dark.svg") no-repeat;
+  background: image-url("topcoat/hamburger_light.svg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -165,13 +151,13 @@ limitations under the License.
   font-size: 16px;
   line-height: 3rem;
   letter-spacing: 1px;
-  color: #454545;
-  text-shadow: 0 1px #fff;
+  color: #c6c8c8;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
   vertical-align: top;
-  background-color: #e5e9e8;
-  -webkit-box-shadow: inset 0 1px #fff;
-  box-shadow: inset 0 1px #fff;
-  border: 1px solid #a5a8a8;
+  background-color: #595b5b;
+  -webkit-box-shadow: inset 0 1px rgba(255,255,255,0.12);
+  box-shadow: inset 0 1px rgba(255,255,255,0.12);
+  border: 1px solid rgba(0,0,0,0.36);
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
@@ -179,9 +165,9 @@ limitations under the License.
 .topcoat-button.is-active,
 .topcoat-button--large:active,
 .topcoat-button--large.is-active {
-  background-color: #d3d7d7;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  background-color: #404141;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
 }
 .topcoat-button:disabled,
 .topcoat-button.is-disabled {
@@ -215,12 +201,12 @@ limitations under the License.
 .topcoat-button--quiet.is-active,
 .topcoat-button--large--quiet:active,
 .topcoat-button--large--quiet.is-active {
-  color: #454545;
-  text-shadow: 0 1px #fff;
-  background-color: #d3d7d7;
-  border: 1px solid #a5a8a8;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  color: #c6c8c8;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
+  background-color: #404141;
+  border: 1px solid rgba(0,0,0,0.36);
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
 }
 .topcoat-button--quiet:disabled,
 .topcoat-button--quiet.is-disabled {
@@ -316,7 +302,7 @@ limitations under the License.
 .topcoat-button--cta.is-active,
 .topcoat-button--large--cta:active,
 .topcoat-button--large--cta.is-active {
-  background-color: #0380e8;
+  background-color: #1976c3;
   -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
   box-shadow: inset 0 1px rgba(0,0,0,0.12);
 }
@@ -423,21 +409,21 @@ limitations under the License.
   padding: 0 0.75rem;
   line-height: 3rem;
   letter-spacing: 1px;
-  color: #454545;
-  text-shadow: 0 1px #fff;
+  color: #c6c8c8;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
   vertical-align: baseline;
-  background-color: #e5e9e8;
-  -webkit-box-shadow: inset 0 1px #fff;
-  box-shadow: inset 0 1px #fff;
-  border: 1px solid #a5a8a8;
+  background-color: #595b5b;
+  -webkit-box-shadow: inset 0 1px rgba(255,255,255,0.12);
+  box-shadow: inset 0 1px rgba(255,255,255,0.12);
+  border: 1px solid rgba(0,0,0,0.36);
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .topcoat-icon-button:active,
 .topcoat-icon-button.is-active {
-  background-color: #d3d7d7;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  background-color: #404141;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
 }
 .topcoat-icon-button:disabled,
 .topcoat-icon-button.is-disabled {
@@ -479,12 +465,12 @@ limitations under the License.
 .topcoat-icon-button--quiet.is-active,
 .topcoat-icon-button--large--quiet:active,
 .topcoat-icon-button--large--quiet.is-active {
-  color: #454545;
-  text-shadow: 0 1px #fff;
-  background-color: #d3d7d7;
-  border: 1px solid #a5a8a8;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  color: #c6c8c8;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
+  background-color: #404141;
+  border: 1px solid rgba(0,0,0,0.36);
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
 }
 .topcoat-icon-button--quiet:disabled,
 .topcoat-icon-button--quiet.is-disabled {
@@ -524,9 +510,9 @@ limitations under the License.
 }
 .topcoat-icon-button--large:active,
 .topcoat-icon-button--large.is-active {
-  background-color: #d3d7d7;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  background-color: #404141;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
 }
 .topcoat-icon-button--large:disabled,
 .topcoat-icon-button--large.is-disabled {
@@ -607,7 +593,7 @@ limitations under the License.
     <div class="topcoat-list__container">
       <h3 class="topcoat-list__header">Category</h3>
       <ul class="topcoat-list">
-        <li class="topcoat-list__item--first">
+        <li class="topcoat-list__item">
           Item
         </li>
         <li class="topcoat-list__item">
@@ -634,37 +620,36 @@ limitations under the License.
   user-select: none;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  border-top: 1px solid #bcbfbf;
+  border-top: 1px solid #2f3234;
   border-bottom: 1px solid #eff1f1;
-  background-color: #dfe2e2;
+  background-color: #444849;
 }
 .topcoat-list__header {
   margin: 0;
   padding: 4px 20px;
   font-size: 0.9em;
   font-weight: 400;
-  background-color: #cccfcf;
-  color: #656565;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-  border-top: solid 1px rgba(255,255,255,0.5);
-  border-bottom: solid 1px rgba(255,255,255,0.23);
+  background-color: #3b3e40;
+  color: #868888;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  border-top: solid 1px rgba(255,255,255,0.1);
+  border-bottom: solid 1px rgba(255,255,255,0.05);
 }
 .topcoat-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  border-top: 1px solid #bcbfbf;
-  color: #454545;
+  border-top: 1px solid #2f3234;
+  color: #c6c8c8;
 }
-.topcoat-list__item,
-.topcoat-list__item--first {
+.topcoat-list__item {
   margin: 0;
   padding: 0;
   padding: 1.25rem;
-  border-top: 1px solid #eff1f1;
-  border-bottom: 1px solid #bcbfbf;
+  border-top: 1px solid #5e6061;
+  border-bottom: 1px solid #2f3234;
 }
-.topcoat-list__item--first {
+.topcoat-list__item:first-child {
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -710,6 +695,9 @@ Navigation Bar
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  white-space: nowrap;
+  overflow: hidden;
+  word-spacing: 0;
   padding: 0;
   margin: 0;
   font: inherit;
@@ -724,10 +712,10 @@ Navigation Bar
   height: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background: #e5e9e8;
-  color: #000;
-  -webkit-box-shadow: inset 0 -1 #b9bcbc, 0 1px rgba(0,0,0,0.95);
-  box-shadow: inset 0 -1 #b9bcbc, 0 1px rgba(0,0,0,0.95);
+  background: #595b5b;
+  color: #fff;
+  -webkit-box-shadow: inset 0 -1px #333434, 0 1px rgba(0,0,0,0.15);
+  box-shadow: inset 0 -1px #333434, 0 1px rgba(0,0,0,0.15);
 }
 .topcoat-navigation-bar__item {
   -webkit-box-sizing: border-box;
@@ -762,7 +750,7 @@ Navigation Bar
   overflow: hidden;
   font-size: 1.3rem;
   font-weight: 400;
-  color: #000;
+  color: #fff;
 }
 
 /*
@@ -806,16 +794,16 @@ limitations under the License.
   font: inherit;
   font-weight: 200;
   outline: none;
-  border: 1px solid #a5a8a8;
-  background-color: #e5e9e8;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  color: #454545;
+  border: 1px solid rgba(0,0,0,0.36);
+  background-color: #595b5b;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  color: #c6c8c8;
   -webkit-appearance: none;
   padding: 0 0 0 2.7em;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  background-image: image-url("topcoat/search.svg");
+  background-image: image-url("topcoat/search_light.svg");
   background-position: 1em center;
   background-repeat: no-repeat;
   -webkit-background-size: 16px;
@@ -912,11 +900,11 @@ limitations under the License.
   font: inherit;
   font-weight: 200;
   outline: none;
-  border: 1px solid #a5a8a8;
-  background-color: #e5e9e8;
-  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  box-shadow: inset 0 1px rgba(0,0,0,0.12);
-  color: #454545;
+  border: 1px solid rgba(0,0,0,0.36);
+  background-color: #595b5b;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  box-shadow: inset 0 1px rgba(0,0,0,0.18);
+  color: #c6c8c8;
 }
 .topcoat-text-input:focus {
   background-color: #fff;

@@ -22,8 +22,10 @@ Or install it yourself as:
 Choose whatever version you prefer:
 
 ```css
-*= require topcoat/dark
-*= require topcoat/light
+*= require topcoat/desktop-dark
+*= require topcoat/desktop-light
+*= require topcoat/mobile-dark
+*= require topcoat/mobile-light
 ```
 
 ## Contributing
