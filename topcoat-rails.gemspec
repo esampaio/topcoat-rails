@@ -7,6 +7,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Add Adobe's Topcoat to your Rails app}
   gem.summary       = %q{Adobe's Topcoat for Rails 3 applications}
   gem.homepage      = "http://github.com/esampaio/topcoat-rails"
+  gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
